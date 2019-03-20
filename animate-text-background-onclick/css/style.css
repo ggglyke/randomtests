@@ -1,0 +1,71 @@
+html, body{
+	height: 100%;
+}
+
+
+.value{
+	font-size: 36px;
+	font-family: 'Poppins', sans-serif;
+	margin: .75rem 0;
+	padding: 0 1rem 0 3rem;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+.value span{
+	font-weight: 600;
+}
+.value small{
+	font-size: 70%;
+	margin-left: 2rem;
+}
+.value:after{
+	background-color: #FDB515;
+	content: " ";
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	z-index: -1;
+	top: -0.25em;
+	height: 1.5em;
+}
+.value.value-hilighted small{
+	opacity: 1;
+	transition: opacity .8s;
+}
+.value.value-hilighted:after{
+	animation-duration: .5s;
+	animation-name: slideAfterIn;
+	animation-fill-mode: forwards;
+}
+
+.value.value-hilighted-off small{
+	opacity:0;
+}
+
+.value.value-hilighted-off:after{
+	animation-duration: .5s;
+	animation-name: slideAfterOff;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideAfterIn {
+  from {
+    width: 0%; 
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideAfterOff {
+  from {
+    width: 100%; 
+  }
+
+  to {
+    width: 0%;
+  }
+}

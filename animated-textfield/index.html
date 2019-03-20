@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test field</title>
+	<style>
+		.container{
+			width: 400px;
+			margin: 0 auto;
+			padding-top:200px;
+			box-sizing: border-box;
+		}
+		form{
+			position: relative;
+		}
+		input{
+			padding: 13px 15px;
+			border-radius: 4px;
+			outline: 1px solid #DADCE0;
+			width: 100%;
+			font-size: 16px;
+			transition: all .2s linear;
+			box-sizing: border-box;
+			height: 45px;
+			border: none;
+		}
+		input:focus{
+			outline: 2px solid #0099FF;
+			padding: 13px 14px;
+		}
+		input:focus div{
+			display: none;
+		}
+		form div{
+			position: absolute;
+			top: 0;
+			line-height: 45px;
+			padding: 0 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<input type="text" name="textfield"/>
+			<div>Adresse ou numéro de téléphone</div>
+		</form>
+	</div>
+</body>
+</html>

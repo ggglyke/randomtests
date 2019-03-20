@@ -1,0 +1,51 @@
+/* Commun */
+
+
+html, body{
+	height: 100%;
+}
+
+
+.page{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper{
+	width: 1100px;
+	margin: 0 auto;
+	color: #141E30;
+	flex:1;
+}
+
+.page-header{
+	display: flex;
+	justify-content: center;
+	padding: 3rem 0;
+}
+
+.instructions{
+	align-self: center;
+	flex: 1;
+}
+
+.page{
+	display:flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+	color: #4c5a72;
+	font-family: 'Alegreya Sans', sans-serif;
+	align-items: center;
+	height: 4rem;
+	background-color: #F3F3F3;
+	margin: auto .15em 0 .15em;
+}
+
+.footer a{
+	color: #4c5a72;
+	margin: auto .15em;
+}
